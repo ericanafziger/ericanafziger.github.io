@@ -1,0 +1,22 @@
+//change variables below to customize the tuxedo framework
+
+//colors
+$dark: #272827;
+$dark-grey: #3C3F42;
+$md-grey: #869293;
+$light: #E3E6E8;
+$color-pop: #26596C;
+
+
+//fonts - to update, import a new font below
+@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700|Source+Sans+Pro:300,400,400i,700');
+
+//Define font family for header and body font. Must already be imported above
+$header-font: 'PT Serif', serif;
+$body-font: 'Source Sans Pro', sans-serif;
+
+%body-font {
+  font-family: 'Source Sans Pro', sans-serif;
+  font-weight: lighter;
+  letter-spacing: .5px;
+}
