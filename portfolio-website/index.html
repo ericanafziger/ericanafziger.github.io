@@ -42,8 +42,6 @@
         <img class="4" src="img/flowerbush.jpg" alt="flowerbush">
         <img class="5" src="img/flowers.jpg" alt="flowers">
       </div>
-      <div class="right-arrow"></div>
-      <div class="left-arrow"></div>
       <div class="hero-text text-center">
         <h2 class="text-light">Erica Nafziger</h2>
         <h6 class="text-light">Front-end developer, photographer, and design enthusiast living and working in Portland, OR. Eager to create and learn all I can.</h6>
@@ -54,39 +52,74 @@
           <div class="circle 4"></div>
           <div class="circle 5"></div>
         </div>
-        <br>
-        <button type="button" class="btn-light">View Work</button>
+        <br><br>
+        <a href="#work"><button type="button" class="scroll btn-light">View Work</button></a>
       </div>
     </div>
 
-    <div class="hero bg-dark work">
+    <div class="hero bg-dark" id="work">
       <div class="hero-content text-dark">
-
         <header class="hero-header text-light">
           <h1>Selected Work</h1>
         </header>
-          <div class="container">
-            <div class="row gallery">
-              <div class="col-6 bg-light">
-                <img src="img/tuxedo.png" alt="">
+        <div class="container">
+          <div class="row gallery">
+            <div class="col-6 bg-dark">
+              <img src="img/tuxedo.png" alt="">
+              <div class="overlay">
+                <h3>Tuxdeo CSS Framework</h3>
+                <a href="#"><button type="button" class="btn-ghost-light">More Info</button></a>
               </div>
-              <div class="col-6 bg-light">
-                <img src="img/ericakaitcreative.png" alt="">
-              </div>
-
             </div>
-            <div class="row gallery">
-              <div class="col-6 bg-light">
-                <img src="img/streamsearch.png" alt="">
+            <div class="col-6 bg-dark">
+              <img src="img/ericakaitcreative.png" alt="">
+              <div class="overlay">
+                <h3>Erica Kait Creative Website</h3>
+                <a href="#"><button type="button" class="btn-ghost-light">More Info</button></a>
               </div>
-              <div class="col-6 bg-light">
-                <img src="img/humanesociety.png" alt="">
-              </div>
-
             </div>
           </div>
+          <div class="row gallery">
+            <div class="col-6 bg-dark">
+              <img src="img/streamsearch.png" alt="">
+              <div class="overlay">
+                <h3>StreamSearch Website</h3>
+                <a href="#"><button type="button" class="btn-ghost-light">More Info</button></a>
+              </div>
+            </div>
+            <div class="col-6 bg-dark">
+              <img src="img/humanesociety.png" alt="">
+              <div class="overlay">
+                <h3>Humane Society Redesign</h3>
+                <a href="#"><button type="button" class="btn-ghost-light">More Info</button></a>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
+    </div>
 
+    <div class="hero" id="contact">
+      <img class="hero-image" src="img/flowerbush.jpg" alt="Dock on lake in Florence, OR">
+      <div class="hero-content">
+        <div class="hero-body">
+          <form class="bg-t-dark">
+            <header>
+              <h1 class="text-light">Contact</h1>
+            </header>
+            <label class="text-light">Subject</label>
+            <input type="text" class="input-light" placeholder="Message Subject">
+            <label class="text-light">Message</label>
+            <textarea rows="4" type="text" class="input-light" placeholder="Message Content"></textarea>
+            <div class="form-divide-light"></div>
+            <div class="f-row">
+              <div class="f-col-1 flex-center">
+                <button type="button" class="btn-ghost-light">Send Message</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
 
 
@@ -98,7 +131,5 @@
       <small class="f-col-3 flex-center"><a href="http://codepen.io/ericanafziger/">CodePen</a></small>
     </footer>
 
-    <script src="js/three-minified.js"></script>
-    <script src="js/three-render.js"></script>
   </body>
 </html>

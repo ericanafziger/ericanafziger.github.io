@@ -111,9 +111,21 @@ function heroSlideshow() {
   }
 
 
+  //smooth scroll function
+  function smoothScroll() {
+    $(".scroll").click(function() { /* class or id of button/link that will be clicked */
+        $('html, body').animate({
+            scrollTop: $("#work").offset().top, /* class or id of div that will be scrolled to */
+            behavior: 'smooth',
+        }, 1000);
+    });
+  }
+
+
 ////////// Add Functions to Call HERE//////////
 heroSlideshow();
 mobileMenu();
 animations();
+smoothScroll();
 
 });
