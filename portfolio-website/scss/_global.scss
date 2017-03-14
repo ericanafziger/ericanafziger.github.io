@@ -9,14 +9,14 @@ $color-pop: #26596C;
 
 
 //fonts - to update, import a new font below
-@import url('https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700|Source+Sans+Pro:300,400,400i,700');
+@import url('https://fonts.googleapis.com/css?family=Josefin+Sans:100i,300,400,700,700i|Lato:300,400,700');
 
 //Define font family for header and body font. Must already be imported above
-$header-font: 'PT Serif', serif;
-$body-font: 'Source Sans Pro', sans-serif;
+$header-font: 'Josefin Sans', sans-serif;
+$body-font: 'Lato', sans-serif;
 
 %body-font {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: lighter;
   letter-spacing: .5px;
 }

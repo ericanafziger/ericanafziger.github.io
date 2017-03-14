@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=PT+Serif:400,400i,700|Source+Sans+Pro:300,400,400i,700");
+@import url("https://fonts.googleapis.com/css?family=Josefin+Sans:100i,300,400,700,700i|Lato:300,400,700");
 * {
   box-sizing: border-box;
   margin: 0;
@@ -9,12 +9,12 @@ body {
   line-height: 1; }
 
 h6, p, small {
-  font-family: 'Source Sans Pro', sans-serif;
+  font-family: 'Lato', sans-serif;
   font-weight: lighter;
   letter-spacing: .5px; }
 
 h1, h2, h3, h4, h5, blockquote {
-  font-family: "PT Serif", serif; }
+  font-family: "Josefin Sans", sans-serif; }
 
 h1 {
   font-size: 36px;
@@ -82,7 +82,7 @@ blockquote {
     font-size: 18px; }
 
 ul {
-  font-family: "Source Sans Pro", sans-serif;
+  font-family: "Lato", sans-serif;
   font-weight: lighter;
   list-style-position: inside; }
 
@@ -171,7 +171,7 @@ ul {
 
 .hero {
   position: relative;
-  font-family: "PT Serif", serif;
+  font-family: "Josefin Sans", sans-serif;
   height: 100vh;
   min-height: 500px; }
   .hero-content {
@@ -242,7 +242,7 @@ ul {
   position: absolute;
   left: 0;
   top: 50%;
-  background: url('data:image/svg+xml;utf8,<svg width="40px" height="40px" viewBox="4 0 9 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon id="Path-2" stroke="none" fill="#F4F4F4" fill-rule="evenodd" transform="translate(8.500000, 9.065085) rotate(-270.000000) translate(-8.500000, -9.065085) " points="-3.60600438e-13 5 17 5 8.5 13.1301693"></polygon></svg>');
+  background: url('data:image/svg+xml;utf8,<svg width="40px" height="40px" viewBox="4 0 9 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon id="Path-2" stroke="none" fill="#272827" fill-rule="evenodd" transform="translate(8.500000, 9.065085) rotate(-270.000000) translate(-8.500000, -9.065085) " points="-3.60600438e-13 5 17 5 8.5 13.1301693"></polygon></svg>');
   background-repeat: no-repeat;
   background-position: center;
   height: 40px;
@@ -254,7 +254,7 @@ ul {
   position: absolute;
   right: 0;
   top: 50%;
-  background: url('data:image/svg+xml;utf8,<svg width="40px" height="40px" viewBox="4 0 9 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon id="Path-2" stroke="none" fill="#F4F4F4" fill-rule="evenodd" transform="translate(8.500000, 9.065085) rotate(-90.000000) translate(-8.500000, -9.065085) " points="-3.60600438e-13 5 17 5 8.5 13.1301693"></polygon></svg>');
+  background: url('data:image/svg+xml;utf8,<svg width="40px" height="40px" viewBox="4 0 9 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><polygon id="Path-2" stroke="none" fill="#272827" fill-rule="evenodd" transform="translate(8.500000, 9.065085) rotate(-90.000000) translate(-8.500000, -9.065085) " points="-3.60600438e-13 5 17 5 8.5 13.1301693"></polygon></svg>');
   background-repeat: no-repeat;
   background-position: center;
   height: 40px;
@@ -267,7 +267,7 @@ ul {
   justify-content: center; }
 
 .circle {
-  background: url('data:image/svg+xml;utf8,<svg width="15px" height="15px" viewBox="3 3 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><circle id="Oval-2" stroke="#F4F4F4" stroke-width="3" fill="none" cx="15.5" cy="15.5" r="10.5"></circle></svg>');
+  background: url('data:image/svg+xml;utf8,<svg width="13px" height="13px" viewBox="3 3 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><circle id="Oval-2" stroke="#272827" stroke-width="3" fill="none" cx="15.5" cy="15.5" r="10.5"></circle></svg>');
   background-repeat: no-repeat;
   background-position: center;
   height: 25px;
@@ -276,7 +276,7 @@ ul {
     cursor: pointer; }
 
 .circle.active {
-  background: url('data:image/svg+xml;utf8,<svg width="15px" height="15px" viewBox="3 3 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><circle id="Oval-2" stroke="#F4F4F4" stroke-width="3" fill="#f4f4f4" cx="15.5" cy="15.5" r="10.5"></circle></svg>');
+  background: url('data:image/svg+xml;utf8,<svg width="13px" height="13px" viewBox="3 3 25 25" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><circle id="Oval-2" stroke="#272827" stroke-width="3" fill="#272827" cx="15.5" cy="15.5" r="10.5"></circle></svg>');
   background-repeat: no-repeat;
   background-position: center;
   height: 25px;
@@ -293,7 +293,7 @@ nav {
   display: flex;
   transform: translate(-50%, 0);
   z-index: 2;
-  font-family: "PT Serif", serif; }
+  font-family: "Josefin Sans", sans-serif; }
   @media screen and (max-width: 760px) {
     nav {
       padding-right: 30px; } }
@@ -470,7 +470,7 @@ nav {
   margin-top: 10px; }
 
 .side-bar {
-  font-family: "PT Serif", serif;
+  font-family: "Josefin Sans", sans-serif;
   position: fixed;
   overflow: auto;
   height: 100vh;
@@ -513,7 +513,7 @@ nav {
       padding-top: 80px; } }
 
 button {
-  font-family: "PT Serif", serif;
+  font-family: "Josefin Sans", sans-serif;
   font-size: 1rem;
   min-height: 50px;
   font-weight: 500;
@@ -592,12 +592,12 @@ form {
 
 label {
   font-size: 1rem;
-  font-family: "PT Serif", serif; }
+  font-family: "Josefin Sans", sans-serif; }
 
 [class*="form-header"] {
   font-size: 3rem;
   padding: 2rem;
-  font-family: "PT Serif", serif;
+  font-family: "Josefin Sans", sans-serif;
   text-align: center;
   margin-bottom: 3rem; }
 
@@ -614,7 +614,7 @@ input, textarea, select {
   margin: 5px 0 30px 0;
   width: 100%;
   font-size: 1rem;
-  font-family: "PT Serif", serif; }
+  font-family: "Josefin Sans", sans-serif; }
   input:focus, textarea:focus, select:focus {
     outline: none; }
 
@@ -1029,6 +1029,7 @@ footer {
 
 canvas {
   display: block;
-  max-width: 100%; }
+  max-width: 100%;
+  min-height: 500px; }
 
 /*# sourceMappingURL=styles.css.map */

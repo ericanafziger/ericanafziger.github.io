@@ -9,12 +9,10 @@
   </head>
   <body>
     <nav class="nav-ghost-light">
+      <header class="f-col-1"><h5>Erica Nafziger</h5></header>
       <ul class="menu-items">
         <a href="#" class="f-col-1 flex-center"><li>Work</li></a>
         <a href="#" class="f-col-1 flex-center"><li>Bio</li></a>
-      </ul>
-      <header class="f-col-4 flex-center"><h5>Erica Nafziger</h5></header>
-      <ul class="menu-items">
         <a href="#" class="f-col-1 flex-center"><li>Contact</li></a>
         <a href="#" class="f-col-1 flex-center"><li>Photography</li></a>
       </ul>
@@ -38,7 +36,7 @@
 
 
     <div class="canvas-container">
-      <div id="three-sphere"></div>
+      <div id="three-torus"></div>
       <div class="canvas-content text-light text-center">
         <h1 class="underline-light">Erica Nafziger</h1>
         <p>
@@ -48,12 +46,30 @@
       </div>
     </div>
 
+    <div class="hero-slideshow">
+      <div class="images">
+        <img class="1 active" src="img/forest.jpg" alt="Forest">
+        <img class="2" src="img/waterfall.jpg" alt="Waterfall">
+      </div>
+      <div class="right-arrow"></div>
+      <div class="left-arrow"></div>
+      <div class="hero-text text-center">
+        <h2 class="text-dark">Erica Nafziger</h2>
+        <h6 class="text-dark">Front-end developer, photographer, and design enthusiast living and working in Portland, OR. Eager to create and learn all I can.</h6>
+        <div class="circles">
+          <div class="circle 1 active"></div>
+          <div class="circle 2"></div>
+        </div>
+        <br>
+        <button type="button" class="btn-dark">View Work</button>
+      </div>
+    </div>
 
-    <footer class="f-row bg-t-dark text-light responsive">
-      <small class="f-col-3 flex-center"><a>GitHub Link</a></small>
-      <small class="f-col-3 flex-center"><a>Website Link</a></small>
-      <small class="f-col-3 flex-center"><a>LinkedIn Link</a></small>
-      <small class="f-col-3 flex-center"><a>CodePen Link</a></small>
+
+    <footer class="f-row bg-pop text-light">
+      <small class="f-col-3 flex-center"><a href="https://github.com/ericanafziger">GitHub</a></small>
+      <small class="f-col-3 flex-center"><a href="https://www.linkedin.com/in/ericaknafziger/">LinkedIn</a></small>
+      <small class="f-col-3 flex-center"><a href="http://codepen.io/ericanafziger/">CodePen</a></small>
     </footer>
 
     <script src="js/three-minified.js"></script>
