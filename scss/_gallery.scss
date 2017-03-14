@@ -1,0 +1,58 @@
+#work {
+  min-height: 800px;
+  @media screen and #{$tablet} {
+    min-height: 900px;
+  }
+  @media screen and #{$mobile} {
+    min-height: 1500px;
+  }
+}
+.gallery {
+  [class*="col-"] {
+    height: 280px;
+    position: relative;
+    .overlay {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 50%;
+      text-align: center;
+      color: $light;
+      padding: 20px;
+      opacity: 0;
+      transition: all ease-in-out 200ms;
+    }
+    img {
+      max-width: 100%;
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      object-position: top;
+      display: block;
+      opacity: 1;
+      transition: all ease-in-out 200ms;
+      border: 2px solid $md-grey;
+    }
+    @media screen and #{$tablet} {
+      margin-top: 20px;
+    }
+  }
+}
+.col-6:hover > .overlay {
+  opacity: 1;
+  cursor: pointer;
+}
+.overlay:hover > img,
+.col-6:hover > img {
+  background: $dark;
+  opacity: 0.1;
+  cursor: pointer;
+}
+
+#contact {
+  min-height: 800px;
+  img {
+    min-height: 800px;
+  }
+}
