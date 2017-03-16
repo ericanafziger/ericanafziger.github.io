@@ -119,7 +119,7 @@ function heroSlideshow() {
   function smoothScroll() {
     $(".scroll").click(function() { /* class or id of button/link that will be clicked */
         $('html, body').animate({
-            scrollTop: $("#work").offset().top, /* class or id of div that will be scrolled to */
+            scrollTop: $("#bio").offset().top, /* class or id of div that will be scrolled to */
             behavior: 'smooth',
         }, 1000);
     });

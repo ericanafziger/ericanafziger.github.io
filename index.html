@@ -11,9 +11,9 @@
     <nav class="nav-pop bg-t-pop fixed">
       <header class="f-col-1"><h5>Erica Nafziger</h5></header>
       <ul class="menu-items">
+        <a class="f-col-1 flex-center scroll-bio"><li>Bio</li></a>
         <a class="f-col-1 flex-center scroll-work"><li>Work</li></a>
         <a class="f-col-1 flex-center scroll-contact"><li>Contact</li></a>
-        <a class="f-col-1 flex-center scroll-bio"><li>Bio</li></a>
         <a target="_blank" href="http://ericakaitcreative.com/" class="f-col-1 flex-center"><li>Photography</li></a>
       </ul>
       <ul class="mobile-nav flex-center">
@@ -26,9 +26,9 @@
           <div class="close f-col-1"></div>
         </div>
         <ul class="flyout-menu text-light">
+          <li><a class="scroll-bio-nav">Bio</a></li>
           <li><a class="scroll-work-nav">Work</a></li>
           <li><a class="scroll-contact-nav">Contact</a></li>
-          <li><a class="scroll-bio-nav">Bio</a></li>
           <li><a target="_blank" href="http://ericakaitcreative.com/">Photography</a></li>
         </ul>
       </div>
@@ -51,22 +51,36 @@
           <div class="circle 4"></div>
         </div>
         <br><br>
-        <a href="#work"><button type="button" class="scroll btn-light">View Work</button></a>
+        <a><button type="button" class="scroll btn-ghost-light">Learn More</button></a>
       </div>
     </div>
 
+    <div class="hero bg-dark" id="bio">
+      <div class="hero-content">
+        <div class="hero-body text-light">
+          <div class="f-row responsive">
+            <div class="f-col-1 animate-in">
+              <p><span class="dropcap">H</span>ello. I’m a front-end developer and designer for the web. I like using my brain on a daily basis. The more challenging a project is the more I will push myself. I want to make sites that are functional, beautiful, and have a purpose. I went to school for digital media before falling in love with coding and the web so I'll gladly get my hands dirty with all the design aspects of your project before I jump into the codebase.</p>
+            </div>
+            <div class="f-col-1 animate-in">
+              <p>I went to Epicodus in Portland, OR to learn the fundamentals of coding and designing for the web. I have experience working in HTML, CSS, jQuery, JavaScript, and a smattering of JavaScript and CSS frameworks. I'll especially love any project that encorporates Sass for their CSS. Wireframing and conceptualizing is my jam. If you are looking to make something unique that sets you apart, I’m your gal. If you’ve read this far, and want to know more, shoot me a message.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
     <div class="hero bg-dark" id="work">
       <div class="hero-content text-dark">
-        <header class="hero-header text-light">
-          <h1>Selected Work</h1>
-        </header>
         <div class="container">
           <div class="row gallery">
+            <h1 class="text-center text-light">Selected Work</h1><br>
             <div class="col-6 bg-dark">
               <img src="img/tuxedo.png" alt="">
               <div class="overlay">
                 <h3>Tuxdeo CSS Framework</h3>
-                <a href="#"><button type="button" class="btn-ghost-light">More Info</button></a>
+                <a href="tuxedo.html"><button type="button" class="btn-ghost-light">More Info</button></a>
               </div>
             </div>
             <div class="col-6 bg-dark">
@@ -97,12 +111,11 @@
       </div>
     </div>
 
-
-    <div class="hero" id="contact">
+    <div class="hero relative" id="contact">
       <img class="hero-image" src="img/flowerbush.jpg" alt="Bush of flowers in Thailand">
       <div class="hero-content">
         <div class="hero-body">
-          <form action="https://formspree.io/garbererica@gmail.com" method="POST"class="bg-t-dark">
+          <form action="https://formspree.io/garbererica@gmail.com" method="POST"class="bg-t-dark box-light">
             <header>
               <h1 class="text-light">Contact</h1>
             </header>
@@ -119,28 +132,12 @@
           </form>
         </div>
       </div>
-    </div>
-
-    <div class="hero bg-dark relative" id="bio">
-      <div class="hero-content">
-        <div class="hero-body text-light">
-          <div class="f-row responsive">
-            <div class="f-col-1 animate-in">
-              <p><span class="dropcap">H</span>ello. I’m a front-end developer and designer for the web. I like using my brain on a daily basis. The more challenging a project is the more I will push myself. I want to make sites that are functional, beautiful, and have a purpose. I went to school for digital media before falling in love with coding and the web so I'll gladly get my hands dirty with all the design aspects of your project before I jump into the codebase.</p>
-            </div>
-            <div class="f-col-1 animate-in">
-              <p>I went to Epicodus in Portland, OR to learn the fundamentals of coding and designing for the web. I have experience working in HTML, CSS, jQuery, JavaScript, and a smattering of JavaScript and CSS frameworks. I'll especially love any project that encorporates Sass for their CSS. Wireframing and conceptualizing is my jam. If you are looking to make something unique that sets you apart, I’m your gal. If you’ve read this far, and want to know more, shoot me a message.</p>
-            </div>
-          </div>
-        </div>
-      </div>
       <footer class="f-row bg-light text-dark absolute">
         <small class="f-col-3 flex-center"><a target="_blank" href="https://github.com/ericanafziger">GitHub</a></small>
         <small class="f-col-3 flex-center"><a target="_blank" href="https://www.linkedin.com/in/ericaknafziger/">LinkedIn</a></small>
         <small class="f-col-3 flex-center"><a target="_blank" href="http://codepen.io/ericanafziger/">CodePen</a></small>
       </footer>
     </div>
-
 
 
 
