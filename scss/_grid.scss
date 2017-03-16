@@ -89,7 +89,7 @@ $column-gutter: 1%; // CHANGE COLUMN GUTTER HERE: must use %;
 
 .responsive {
   .f-col-1, .f-col-2 {
-    @media screen and #{$mobile} {
+    @media screen and #{$tablet} {
       flex: 100%;
     }
   }

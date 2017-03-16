@@ -81,3 +81,12 @@ ul {
   font-weight: lighter;
   list-style-position: inside;
 }
+
+.dropcap {
+  color: $light;
+  float: left;
+  font-size: 75px;
+  line-height: 60px;
+  padding-top: 4px;
+  padding-right: 12px;
+}

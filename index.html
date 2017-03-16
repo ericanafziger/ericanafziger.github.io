@@ -8,12 +8,12 @@
     <title>Erica Nafziger</title>
   </head>
   <body>
-    <nav class="nav-ghost-light">
+    <nav class="nav-pop bg-t-pop fixed">
       <header class="f-col-1"><h5>Erica Nafziger</h5></header>
       <ul class="menu-items">
-        <a href="#" class="f-col-1 flex-center"><li>Work</li></a>
-        <a href="#" class="f-col-1 flex-center"><li>Contact</li></a>
-        <a href="#" class="f-col-1 flex-center"><li>Bio</li></a>
+        <a class="f-col-1 flex-center scroll-work"><li>Work</li></a>
+        <a class="f-col-1 flex-center scroll-contact"><li>Contact</li></a>
+        <a class="f-col-1 flex-center scroll-bio"><li>Bio</li></a>
         <a target="_blank" href="http://ericakaitcreative.com/" class="f-col-1 flex-center"><li>Photography</li></a>
       </ul>
       <ul class="mobile-nav flex-center">
@@ -26,9 +26,9 @@
           <div class="close f-col-1"></div>
         </div>
         <ul class="flyout-menu text-light">
-          <li><a href="#">Work</a></li>
-          <li><a href="#">Contact</a></li>
-          <li><a href="#">Bio</a></li>
+          <li><a class="scroll-work-nav">Work</a></li>
+          <li><a class="scroll-contact-nav">Contact</a></li>
+          <li><a class="scroll-bio-nav">Bio</a></li>
           <li><a target="_blank" href="http://ericakaitcreative.com/">Photography</a></li>
         </ul>
       </div>
@@ -97,14 +97,6 @@
       </div>
     </div>
 
-    <div class="hero" id="bio">
-      <img class="hero-image" src="img/downtown.jpg" alt="Dock on lake in Florence, OR">
-      <div class="hero-content">
-        <div class="hero-body">
-
-        </div>
-      </div>
-    </div>
 
     <div class="hero" id="contact">
       <img class="hero-image" src="img/flowerbush.jpg" alt="Bush of flowers in Thailand">
@@ -129,14 +121,28 @@
       </div>
     </div>
 
+    <div class="hero bg-dark relative" id="bio">
+      <div class="hero-content">
+        <div class="hero-body text-light">
+          <div class="f-row responsive">
+            <div class="f-col-1 animate-in">
+              <p><span class="dropcap">H</span>ello. I’m a front-end developer and designer for the web. I like using my brain on a daily basis. The more challenging a project is the more I will push myself. I want to make sites that are functional, beautiful, and have a purpose. I went to school for digital media before falling in love with coding and the web so I'll gladly get my hands dirty with all the design aspects of your project before I jump into the codebase.</p>
+            </div>
+            <div class="f-col-1 animate-in">
+              <p>I went to Epicodus in Portland, OR to learn the fundamentals of coding and designing for the web. I have experience working in HTML, CSS, jQuery, JavaScript, and a smattering of JavaScript and CSS frameworks. I'll especially love any project that encorporates Sass for their CSS. Wireframing and conceptualizing is my jam. If you are looking to make something unique that sets you apart, I’m your gal. If you’ve read this far, and want to know more, shoot me a message.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <footer class="f-row bg-light text-dark absolute">
+        <small class="f-col-3 flex-center"><a target="_blank" href="https://github.com/ericanafziger">GitHub</a></small>
+        <small class="f-col-3 flex-center"><a target="_blank" href="https://www.linkedin.com/in/ericaknafziger/">LinkedIn</a></small>
+        <small class="f-col-3 flex-center"><a target="_blank" href="http://codepen.io/ericanafziger/">CodePen</a></small>
+      </footer>
+    </div>
 
 
 
-    <footer class="f-row bg-light text-dark">
-      <small class="f-col-3 flex-center"><a target="_blank" href="https://github.com/ericanafziger">GitHub</a></small>
-      <small class="f-col-3 flex-center"><a target="_blank" href="https://www.linkedin.com/in/ericaknafziger/">LinkedIn</a></small>
-      <small class="f-col-3 flex-center"><a target="_blank" href="http://codepen.io/ericanafziger/">CodePen</a></small>
-    </footer>
 
   </body>
 </html>

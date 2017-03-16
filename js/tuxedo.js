@@ -6,14 +6,18 @@ $(document).ready(function() {
 
       /* Check the location of each animate-in elements */
       $('.animate-in').each( function(){
-        var objectBottom = $(this).offset().top + $(this).outerHeight() - 200;
+        var objectBottom = $(this).offset().top + $(this).outerHeight();
         var windowBottom = $(window).scrollTop() + $(window).height();
 
         /* If the object is completely visible in the window, fade it it */
         if (objectBottom < windowBottom) { //object comes into view (scrolling down)
-          if ($(this).css("opacity")==0) {$(this).fadeTo(500,1);}
+          if ($(this).css("opacity")==0) {
+            $(this).fadeTo(1000,1);
+          }
         } else { //object goes out of view (scrolling up) fade out
-          if ($(this).css("opacity")==1) {$(this).fadeTo(500,0);}
+          if ($(this).css("opacity")==1) {
+            $(this).fadeTo(500,0);
+          }
         }
       });
     });
@@ -111,7 +115,7 @@ function heroSlideshow() {
   }
 
 
-  //smooth scroll function
+  // ================Smooth Scroll Functionality ================//
   function smoothScroll() {
     $(".scroll").click(function() { /* class or id of button/link that will be clicked */
         $('html, body').animate({
