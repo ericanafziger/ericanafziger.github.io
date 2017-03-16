@@ -9,14 +9,11 @@
   </head>
   <body>
     <div class="container">
-
       <div class="f-row responsive">
         <div class="f-col-1">
 
         </div>
         <div class="f-col-4">
-
-
           <h4 class="text-pop underline-pop"><a href="index.html">Back Home</a></h4>
           <h1>Tuxedo CSS Framework</h1>
           <h5>Began March 2017</h5>
@@ -25,6 +22,8 @@
           <h3>Stage 1 - Questioning every decision that lead me to this point</h3>
           <p>That might be a bit of an exaggeration, but day one it was how I felt. I had never built a framework before and I had absolutely no idea where to start. My initial fear was that I had bitten off way more than I could chew. With only 2 weeks until the project demo, I knew I was going to have to work fast to build not only the design and code of the framework itself, but also the documentation website.</p>
           <p>So to unfreeze myself from the panic, I started in the most logical place I could - the logo. There is something about having a visualization of the logo that cements in my mind the shape and feel for the entire project. So starting with the logo, as trivial as it may sound, really made all the difference. It gave me an outline for the simple, clean interface I wanted to aim for with Tuxedo.</p>
+          <img src="img/tuxedo-logos.png" alt="hand drawn tuxedo logo and final result">
+          <small>Comparison of initial Tuxedo logo from my sketchbook and the final version which was created using sketch. I loved the idea of incorporating a bow tie for the x early on.</small><br><br>
 
           <h3>Stage 2 - Asking the Right Questions</h3>
           <p>One of the initial reasons I wanted to build Tuxedo was that I had grown exhausted of using frameworks like Materialize and Bootstrap. While they both can create truly amazing web experiences, I'm not the kind of person who likes to just let thousands of lines of code sit in the background of my project - especially if I have no idea what they are doing and how to override them. I would end up with too many lines of CSS just to override a simple button or navbar, and I knew my fellow design peers felt the same way. With Tuxedo I wanted to see if it was possible to design a framework built with the front-end developer in mind; someone who didn't just want to use the presets, but who was knowledgable enough to dig into the actual code to create custom changes.</p>
@@ -41,24 +40,38 @@
           <h3>Stage 3 - Reconciling Differences</h3>
           <p>After my questions phase I saw a stark difference in the needs of front-end and back-end students. While front-end students with more knowledge of CSS and design wanted a lightweight easily customizable framework, students in back-end tracks wanted a framework that looked good right out of the box, no changes necessary. Both sides expressed being tired of cookie cutter sites that look like they were built with a specific framework, and the need for clear documentation with visuals and code snippets.</p>
           <p><strong>So I had a new goal:</strong> create a framework that could make both sides happy. Enough pre-formatted styles that it would be easy to drop in elements and have a site up and running almost immediately, and code customizable enough that it could easily be changed to create a specific look.</p>
+          <img src="img/tuxedo-user-persona.png" alt="User personas and stories">
+          <small>Example of one user persona and story put together from my earlier questions.</small><br><br>
           <h3>Stage 4 - The Design Phase</h3>
           <p>Designing the Tuxedo look was a mixture of creating quick mockups of specific elements in Sketch and then coding them out to see if what I had designed was atomic and could stand-alone well enough to work on a larger scale. For example, I had this awesome idea for an outlined "ghost" form, but then realized my current concept wasn't atomic enough to be made into a class that could be applied to any form - who knows maybe I'll revisit this one someday.</p>
+          <img src="img/tuxedo-sketch-screenshot.png" alt="hand drawn tuxedo logo and final result">
+          <small>Screen shot from my Sketch file containing ideas of what forms would look like with the base elements such as buttons and inputs put together. The middle artboard is the "ghost" form that I later abandoned.</small><br><br>
+          <img src="img/tuxedo-fonts-colors.png" alt="hand drawn tuxedo logo and final result">
+          <small>Some of the initial color palettes and font selections I designed in sketch.</small><br><br>
           <p>Once I had several Sketch artboards with forms, buttons, navs, heroes, etc. I moved completely toward coding everythign out. As I said before, I wanted Tuxedo to be easily editable.</p>
           <blockquote> The main thing that makes Tuxedo so unique is that its code is meant to be manipulated. Tuxedo's CSS files are well commented and clearly named so it is easy for developers to change specific elements.</blockquote>
           <p>This means fewer tacked on styles used to override the framework and less cookie cutter lookalikes. If you want your navbar to be a different height or your sidebar to be on the right side instead of the left simply go into the Sass files and change it! This is my favorite part of Tuxedo. It felt like I really hit my goal of making something better for front-end developers, while still giving enough built in presets to make designing easy for those who didn't want to make that their main focus.</p>
+          <img src="img/tuxedo-code-screenshot.png" alt="tuxedo commented code screenshot">
+          <small>Example of Tuxedo's code for the sidebar component. It is easy to see how well commented each element it. Making it easy for the developer to go in and change what they want.</small><br><br>
+
+
           <h3>Stage 5 - Documenting it ALL</h3>
           <p>I was initially mortified of this stage. I though it was going to be incredibly difficult to show examples of each element and then also have a place to copy the code. I was afraid it was going to look messy and perform poorly. However, as luck would have it, this stage ended up being relatively straightforward, although a major time hog.</p>
-          <p>I came up with some quick mockups in Sketch and an InVision prototype for what I wanted the documentation to look like by Thursday morning of week 1. I then hopped back into Atom to start coding everything out. In the framework code, I had divided each component out into a separate Sass file, so in the documentation I gave each of those files its own section.</p>
+          <p>I came up with some quick mockups in Sketch and an InVision prototype - <a target="_blank" href="https://invis.io/C3APOBGJ8"><strong>view here</strong></a> - for what I wanted the documentation to look like by Thursday morning of week 1. I then hopped back into Atom to start coding everything out. In the framework code, I had divided each component out into a separate Sass file, so in the documentation I gave each of those files its own section.</p>
+          <img src="img/tuxedo-landing-wireframe.png" alt="tuxedo landing page initial wireframe">
+          <small>Here is a look at my initial wireframe in Sketch for how the documentation landing page would look. I tend to design for all screen sizes from the very beginning so I have a good idea of how things will break down.</small><br><br>
           <p>One of the best and most surprising results of creating the documentation was how many new things I added on to the actual framework as a result. I would have an idea for something I wanted in the documentation site design and then create it as a modular component I could add to the framework. This is how I ended up with a sidebar component, footer component, and several nifty helper classes.</p>
-          <h3>Stage 6 - Final Push</h3>
-          <p>Thursday of week 2 was show day and things were inching closer and closer to a showable final product. One last big hurdle was figuring out how users would be able to download Tuxedo. I created several zipped versions, one that included every Sass and JavaScript file, and several that included just the files needed for specific components. I then pushed it all to a gh-pages branch and it was live!</p>
-          <h3>Additional Thoughts</h3>
-          <p>Tuxedo is still very much a work in progress and I am continually trying to adapt and add new things to its code. Now that the initial obstacle of just getting something out the door is over, I am incredibly happy I chose to focus on a project that stretched me so completely. I have already noticed how much more reusable the code I am writing has become. I'm not into the hacky this-will-do-for-now solutions. I want CSS that works well and will continue to work in multiple instances and variations.</p>
+          <h3>Stage 6 - Downloading the Thing</h3>
+          <p>Thursday of week 2 was show day and things were inching closer and closer to a showable final product. One last big hurdle was figuring out how users would be able to download Tuxedo. I created several zipped versions, one that included every Sass and JavaScript file, and several that included just the files needed for specific components. I then pushed it all to a gh-pages branch and it was live! I ended up buying a custom domain from Namecheap and leaving the site hosted on gh-pages. This way whenever I make updates I can push them straight to the branch and they are almost instantly live.</p>
+          <h3>Final Thoughts</h3>
+          <p>Tuxedo is still very much a work in progress and I am continually trying to adapt and add new things to its code. Now that the initial obstacle of just getting something out the door is over, I am incredibly happy I chose to focus on a project that stretched me so completely. I have already noticed how much more reusable the code I am writing has become. I'm no longer satisfied with hacky this-will-do-for-now solutions. I want CSS that works well and will continue to work in whatever other instances and variations I twist it into.</p>
+          <img src="img/tuxedo-screenshot.png" alt="tuxedo landing page screenshot">
+          <small>Here is a look at the final landing page for Tuxedo. Image courtesy of Unsplash.</small><br><br>
           <h3>Check it out!</h3>
           <p>Give Tuxedo a looksie over at <strong><a target="_blank" href="http://tuxedocss.us">http://tuxedocss.us</a></strong></p>
           <br>
           <div class="border-left-pop">
-            <h2 class="text-pop">View other projects</h2>
+            <h2 class="text-pop">View Erica's other projects</h2>
             <p><a href="#">Erica Kait Creative Website</a></p>
             <p><a href="#">StreamSearch</a></p>
             <p><a href="#">Humane Society Redesign</a></p>

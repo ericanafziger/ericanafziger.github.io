@@ -100,6 +100,9 @@ ul {
   width: 100%;
   margin: auto;
   padding: 40px 30px; }
+  @media screen and (max-width: 500px) {
+    .container {
+      padding: 20px 0px; } }
 
 [class^='col-'] {
   float: left;
@@ -158,6 +161,8 @@ ul {
   padding: 10px 20px;
   flex-direction: column;
   margin: 5px; }
+  [class*="f-col"] img {
+    max-width: 100%; }
 
 .f-col-1 {
   flex: 1; }

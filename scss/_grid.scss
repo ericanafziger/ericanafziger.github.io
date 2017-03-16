@@ -4,6 +4,9 @@
   width: 100%;
   margin: auto;
   padding: 40px 30px;
+  @media screen and #{$mobile} {
+    padding: 20px 0px;
+  }
 }
 
 // =========== Basic Grid Rules for 12-column grid ========= //
@@ -73,6 +76,9 @@ $column-gutter: 1%; // CHANGE COLUMN GUTTER HERE: must use %;
   padding: 10px 20px;
   flex-direction: column;
   margin: 5px; //gutter between each flexed column
+  img {
+    max-width: 100%;
+  }
 }
 .f-col-1 {
   flex: 1;
