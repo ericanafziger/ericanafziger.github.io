@@ -79,7 +79,10 @@ blockquote {
 ul {
   font-family: $body-font;
   font-weight: lighter;
-  list-style-position: inside;
+  list-style-position: outside;
+  li {
+    padding-bottom: 10px;
+  }
 }
 
 .dropcap {

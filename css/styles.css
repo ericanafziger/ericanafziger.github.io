@@ -84,7 +84,9 @@ blockquote {
 ul {
   font-family: "Lato", sans-serif;
   font-weight: lighter;
-  list-style-position: inside; }
+  list-style-position: outside; }
+  ul li {
+    padding-bottom: 10px; }
 
 .dropcap {
   color: #DEDEDE;
@@ -324,6 +326,8 @@ nav {
         cursor: pointer; }
       nav .menu-items a a:hover, nav .menu-items li a:hover {
         color: inherit; }
+  nav li {
+    padding-bottom: 0; }
   nav header {
     padding-left: 30px;
     flex: 1;
