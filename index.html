@@ -12,8 +12,8 @@
       <header class="f-col-1"><h5>Erica Nafziger</h5></header>
       <ul class="menu-items">
         <a href="#" class="f-col-1 flex-center"><li>Work</li></a>
-        <a href="#" class="f-col-1 flex-center"><li>Bio</li></a>
         <a href="#" class="f-col-1 flex-center"><li>Contact</li></a>
+        <a href="#" class="f-col-1 flex-center"><li>Bio</li></a>
         <a target="_blank" href="http://ericakaitcreative.com/" class="f-col-1 flex-center"><li>Photography</li></a>
       </ul>
       <ul class="mobile-nav flex-center">
@@ -27,8 +27,8 @@
         </div>
         <ul class="flyout-menu text-light">
           <li><a href="#">Work</a></li>
-          <li><a href="#">Bio</a></li>
           <li><a href="#">Contact</a></li>
+          <li><a href="#">Bio</a></li>
           <li><a target="_blank" href="http://ericakaitcreative.com/">Photography</a></li>
         </ul>
       </div>
@@ -36,10 +36,10 @@
 
     <div class="hero-slideshow">
       <div class="images">
-        <img class="1 active" src="img/leaves.jpg" alt="leaves">
-        <img class="2" src="img/thaileaves.jpg" alt="thaileaves">
-        <img class="3" src="img/downtown.jpg" alt="downtown">
-        <img class="4" src="img/flowers.jpg" alt="flowers">
+        <img class="1 active" src="img/leaves.jpg" alt="Black and white leaf close-up in Florence, OR">
+        <img class="2" src="img/thaileaves.jpg" alt="Black and white palm fronds outside a temple in Thailand">
+        <img class="3" src="img/downtown.jpg" alt="Black and white downtown Portand skyline view">
+        <img class="4" src="img/flowers.jpg" alt="Black and white flowers outside the Great Wall of China">
       </div>
       <div class="hero-text text-center">
         <h2 class="text-light">Erica Nafziger</h2>
@@ -98,21 +98,21 @@
     </div>
 
     <div class="hero" id="contact">
-      <img class="hero-image" src="img/flowerbush.jpg" alt="Dock on lake in Florence, OR">
+      <img class="hero-image" src="img/flowerbush.jpg" alt="Bush of flowers in Thailand">
       <div class="hero-content">
         <div class="hero-body">
-          <form class="bg-t-dark">
+          <form action="https://formspree.io/garbererica@gmail.com" method="POST"class="bg-t-dark">
             <header>
               <h1 class="text-light">Contact</h1>
             </header>
             <label class="text-light">Subject</label>
-            <input type="text" class="input-light" placeholder="Message Subject">
+            <input name="subject" type="text" class="input-light" placeholder="Message Subject">
             <label class="text-light">Message</label>
-            <textarea rows="4" type="text" class="input-light" placeholder="Message Content"></textarea>
+            <textarea name="message" rows="4" type="text" class="input-light" placeholder="Message Content"></textarea>
             <div class="form-divide-light"></div>
             <div class="f-row">
               <div class="f-col-1 flex-center">
-                <button type="button" class="btn-ghost-light">Send Message</button>
+                <button type="submit" class="btn-ghost-light">Send Message</button>
               </div>
             </div>
           </form>

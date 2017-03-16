@@ -16,8 +16,9 @@ button {
   background: $light;
   border: 2px solid $light;
   &:hover {
-    background: darken($light, 10%);
-    border-color: darken($light, 10%);
+    background: transparentize(darken($light, 20%), 0.6);
+    border-color: darken($light, 20%);
+    color: $light;
   }
 }
 .btn-dark {
