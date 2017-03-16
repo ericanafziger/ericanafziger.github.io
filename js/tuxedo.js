@@ -119,6 +119,49 @@ function heroSlideshow() {
             behavior: 'smooth',
         }, 1000);
     });
+    $(".scroll-work").click(function() { /* class or id of button/link that will be clicked */
+        $('html, body').animate({
+            scrollTop: $("#work").offset().top, /* class or id of div that will be scrolled to */
+            behavior: 'smooth',
+        }, 1000);
+    });
+    $(".scroll-contact").click(function() { /* class or id of button/link that will be clicked */
+        $('html, body').animate({
+            scrollTop: $("#contact").offset().top, /* class or id of div that will be scrolled to */
+            behavior: 'smooth',
+        }, 1000);
+    });
+    $(".scroll-bio").click(function() { /* class or id of button/link that will be clicked */
+        $('html, body').animate({
+            scrollTop: $("#bio").offset().top, /* class or id of div that will be scrolled to */
+            behavior: 'smooth',
+        }, 1000);
+    });
+    //mobile menu functionality
+    $(".scroll-work-nav").click(function() { /* class or id of button/link that will be clicked */
+      $('.flyout').hide();
+      $('body').css({'overflow': 'auto'});
+        $('html, body').animate({
+            scrollTop: $("#work").offset().top, /* class or id of div that will be scrolled to */
+            behavior: 'smooth',
+        }, 1000);
+    });
+    $(".scroll-contact-nav").click(function() { /* class or id of button/link that will be clicked */
+      $('.flyout').hide();
+      $('body').css({'overflow': 'auto'});
+        $('html, body').animate({
+            scrollTop: $("#contact").offset().top, /* class or id of div that will be scrolled to */
+            behavior: 'smooth',
+        }, 1000);
+    });
+    $(".scroll-bio-nav").click(function() { /* class or id of button/link that will be clicked */
+      $('.flyout').hide();
+      $('body').css({'overflow': 'auto'});
+        $('html, body').animate({
+            scrollTop: $("#bio").offset().top, /* class or id of div that will be scrolled to */
+            behavior: 'smooth',
+        }, 1000);
+    });
   }
 
 
