@@ -7,6 +7,7 @@ $(document).ready(function() {
   var stage4Top = $('#stage4').offset().top;
   var stage5Top = $('#stage5').offset().top;
   var stage6Top = $('#stage6').offset().top;
+  var stage7Top = $('#stage7').offset().top;
   $(window).scroll( function(){  /* Every time the window is scrolled ... */
 
     /* Check the current top of the window */
@@ -28,9 +29,12 @@ $(document).ready(function() {
     } else if (windowTop >= stage5Top && windowTop < stage6Top) {
       $('[id^=stage]').removeClass('active-stage');
       $('#stage5-nav').addClass('active-stage');
-    } else if (windowTop >= stage6Top) {
+    } else if (windowTop >= stage6Top && windowTop < stage7Top) {
       $('[id^=stage]').removeClass('active-stage');
       $('#stage6-nav').addClass('active-stage');
+    } else if (windowTop >= stage7Top) {
+      $('[id^=stage]').removeClass('active-stage');
+      $('#stage7-nav').addClass('active-stage');
     }
 
   });
