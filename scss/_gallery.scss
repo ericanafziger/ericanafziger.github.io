@@ -56,9 +56,17 @@
     min-height: 800px;
   }
 }
-
+//Stages Styling
 .active-stage {
-  border-left: 4px solid $color-pop;
+  border-left: 6px solid $color-pop;
   padding-left: 8px;
-  margin-left: -12px;
+  margin-left: -14px;
+}
+.stages {
+  h5 {
+    padding-top: 0;
+    padding-bottom: 0;
+    margin-top: 10px;
+    margin-bottom: 10px;
+  }
 }

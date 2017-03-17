@@ -996,6 +996,14 @@ footer {
   border-bottom: 2px solid #181818;
   margin-bottom: 20px; }
 
+.underline-dark-grey {
+  border-bottom: 2px solid #474747;
+  margin-bottom: 20px; }
+
+.underline-md-grey {
+  border-bottom: 2px solid #aaaaaa;
+  margin-bottom: 20px; }
+
 .underline-light {
   border-bottom: 2px solid #DEDEDE;
   margin-bottom: 20px; }
@@ -1092,8 +1100,14 @@ footer {
     min-height: 800px; }
 
 .active-stage {
-  border-left: 4px solid #004E64;
+  border-left: 6px solid #004E64;
   padding-left: 8px;
-  margin-left: -12px; }
+  margin-left: -14px; }
+
+.stages h5 {
+  padding-top: 0;
+  padding-bottom: 0;
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 /*# sourceMappingURL=styles.css.map */
