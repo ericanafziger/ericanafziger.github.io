@@ -74,11 +74,12 @@ blockquote {
     font-size: 18px;
   }
 }
-ul {
+ul, ol {
   font-family: $body-font;
   font-weight: lighter;
   list-style-position: outside;
   margin-left: 15px;
+  margin-bottom: 10px;
   li {
     padding-bottom: 10px;
   }

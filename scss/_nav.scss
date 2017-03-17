@@ -16,6 +16,7 @@ nav {
     max-width: 700px; //maximum width of container holding menu items
     list-style: none;
     display: flex;
+    margin-bottom: 0;
     @media screen and #{$tablet} { //hides menu items at tablet size
       display: none;
     }

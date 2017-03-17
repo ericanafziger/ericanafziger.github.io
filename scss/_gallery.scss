@@ -70,3 +70,21 @@
     margin-bottom: 10px;
   }
 }
+
+//Column Styling
+.f-row {
+  .f-col-4:first-child {
+    margin-left: 22%;
+    @media screen and #{$tablet} {
+      margin-left: 0;
+    }
+  }
+}
+
+//gif stying
+.gif {
+  max-height: 500px;
+  margin: auto;
+  display: block;
+  box-shadow: -2px 2px 10px $md-grey;
+}

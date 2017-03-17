@@ -79,12 +79,13 @@ blockquote {
     font-weight: normal;
     font-size: 18px; }
 
-ul {
+ul, ol {
   font-family: "Lato", sans-serif;
   font-weight: lighter;
   list-style-position: outside;
-  margin-left: 15px; }
-  ul li {
+  margin-left: 15px;
+  margin-bottom: 10px; }
+  ul li, ol li {
     padding-bottom: 10px; }
 
 .dropcap {
@@ -315,7 +316,8 @@ nav {
     flex: 3;
     max-width: 700px;
     list-style: none;
-    display: flex; }
+    display: flex;
+    margin-bottom: 0; }
     @media screen and (max-width: 760px) {
       nav .menu-items {
         display: none; } }
@@ -1110,6 +1112,18 @@ footer {
   padding-bottom: 0;
   margin-top: 10px;
   margin-bottom: 10px; }
+
+.f-row .f-col-4:first-child {
+  margin-left: 22%; }
+  @media screen and (max-width: 760px) {
+    .f-row .f-col-4:first-child {
+      margin-left: 0; } }
+
+.gif {
+  max-height: 500px;
+  margin: auto;
+  display: block;
+  box-shadow: -2px 2px 10px #aaaaaa; }
 
 .section {
   width: 20%;
