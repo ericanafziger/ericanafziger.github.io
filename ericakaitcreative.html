@@ -17,7 +17,8 @@
         <div class="f-col-4">
           <h4 class="underline-dark"><a href="index.html">Back Home</a></h4>
           <h1 class="text-pop">Erica Kait Creative Website</h1>
-          <h5>November 2016</h5>
+          <h4>November 2016</h4>
+          <h5>Technologies used: HTML, Sass, JavaScript, jQuery</h5>
           <p>Erica Kait Creative is my photography business and part of what got me into front-end web development in the first place. Before my time at Epicodus I decided to tackle my own web presence with my limited knowledge of CSS and HTML from college. It went...alright, but two things were readily apparent:</p>
           <ol>
             <li>I really enjoyed desgning for the web</li>
@@ -43,22 +44,27 @@
           <small>Example of the responsive mobile menu complete with subtle hamburger menu animation. This was one of my favorite parts of the project to create.</small><br><br>
 
           <h3 id="stage3">Stage 3 - Slideshow Functionality</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <img src="img/" alt="">
-          <small></small><br><br>
+          <p>Having a hero slideshow was another aspect that I knew I wanted for this website. What better way to show off photography than large images right on the landing page. I wanted to build this entirely on my own so I had started working on the code several weeks in advance. I had the arrows and smaller circle that showed your place in the slides working great, but I wanted the slideshow to also play automatically.</p>
+          <p>This ended up being great practice in learning to use the setInterval() function in JavaScript. I ran into a few bugs along the way. For example, once I had the interval set and a user clicked on an arrow it didn't reset the interval. So if they had clicked 1 second before the slide was going to change it appeared jumpy. To fix this I had the interval reset after any manual change made to the slides. After a few hours of debugging I was pretty pleased with the end result of the hero slideshow and it's something I've used on other projects since. Yay for reusable code!</p>
           <h3 id="stage4">Stage 4 - Image sizing</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>As a photography website, I had to overcome the hurdle of managing many high-resolution photos. The trick was finding a balance between keeping the images high-res enough they didn't appear grainy on large desktop monitors, and web-friendly enough they could be quickly loaded by the browser. I'm no expert on this, but after much trial and error I feel like I found a happy medium for my site. This also got me looking into sprites which I'm considering using on future projects.</p>
+          <img src="img/ericakait-blog-post.png" alt="">
+          <small>Example of several images on a long blog post. Making sure images were displayed correctly in high-quality was a huge priority for this site.</small>
 
-          <h3 id="stage5">Stage 5 - Google Analytics</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h3 id="stage5">Stage 5 - Launching</h3>
+          <p>Since this is a static web page with blog content that I update once or twice a month I decided to use GitHub to host my site. I linked it to my custom domain name and after a few hours everything was live! I'm a huge proponent of using gh-pages for hosting static sites because it makes it easy to make changes to the code.</p>
 
-          <h3 id="stage6">Stage 6</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h3 id="stage6">Stage 6 - Google Analytics</h3>
+          <p>Google analytics is something I added onto this site several months after the initial launch to get a preview who is using the site. This is a tool I'm still experimenting with, but already I'm discovering where my users are coming from and browsers and devices they are using to view my site. I am very glad I made mobile such a primary focus after looking at the rate of mobile phones being used.</p>
+
           <h3 id="stage7">Final Thoughts</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>The design of this site is something that I will probably never completely stop. I think that is part of the fun for me, being able to constantly improve and adapt my work as I learn new skills. That being said, I'm happy with where I was able to get during an intense week of work on this project. I can feel my Sass skills constantly growing stronger with each project I take on and the same can be said for my front-end JavaScript/jQuery skills.</p>
+          <p>Another great thing I learned about during this project was a nifty tool called <a href="https://formspree.io/">Formspree</a>. Formspree ties a form submit to an email address. This made it practically effortless to set up a contact form for my site. On another note, I also discovered just how awful it is to override all the presets on form elements. How is there not an easier way to customize a select element!?</p>
+          <img src="img/ericakait-contact.png" alt="">
+          <small>Contact form which uses Formspree to send me an email anytime someone wants to contact me through the website. It took a fair bit of effort to customize the styling of all the input, button, select, and textarea components to get this very minimal form look.</small><br><br>
 
           <h3>Check it out!</h3>
-          <p>Head on over to <strong><a target="_blank" href="http://ericakaitcreative.com/">ericakaitcreative.com</a></strong> to check out the site.</p>
+          <p>Head on over to <strong><a target="_blank" href="http://ericakaitcreative.com/">ericakaitcreative.com</a></strong> to take a look at the final product. And if you need a photographer...I know a girl.</p>
           <br>
           <div class="border-left-pop">
             <h2 class="text-pop">View Erica's other projects</h2>
