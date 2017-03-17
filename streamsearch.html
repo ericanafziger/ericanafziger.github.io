@@ -21,33 +21,75 @@
           <h4 class="underline-dark"><a href="index.html">Back Home</a></h4>
           <h1 class="text-pop">Stream Search</h1>
           <h5>December 2016</h5>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Stream Search was a group project I worked on for the JavaScript unit at Epicodus. I had three amazing group members who were all choosing to focus on the back-end (either Ruby or C#) when they weren't in JavaScript. That left me as the only front-ender and the design-eye for the project. A-OK with me!</p>
+          <p>If you are unfamiliar with Epicodus, at the end of each course there is a group project where students are given 4 or 5 days to tackle a project of their choosing. Since we had just learned AngularJS we decided to use it in conjunction with the GuideBox API and TMDB API to create a movie database search that would let you know where movies and TV shows are currently streaming.</p>
 
-          <h3 id="stage1">Stage 1</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <img src="img/" alt="">
-          <small></small><br><br>
+          <h3 id="stage1">Stage 1 - The MVP</h3>
+          <p>First off we had to come up with our MVP (Minimum Viable Product). This was the absolute minimum we wanted to make sure was completed by the end of the week. It included:</p>
+          <ul>
+            <li>Firebase user data storage</li>
+            <li>Detail page streaming info (when you click on a movie you will be able to tell where it is streaming)</li>
+            <li>Authentication for users</li>
+            <li>Movie search functionality</li>
+          </ul>
+          <p>We also came up with a variety of stretch goals for the project:</p>
+          <ul>
+            <li>Purchase Links</li>
+            <li>Recommended movies based on search</li>
+            <li>If the movie is currently in theaters & where is it playing</li>
+            <li>Search functionality for TV shows</li>
+            <li>Streaming information on initial search query</li>
+            <li>Search functionality for people</li>
+          </ul>
+          <p>I also decided to come up with a mockup for how the User Interface would look. I did this in Photoshop and decided to keep it relatively simple and focus on the home page. Not knowing exactly what we were going to get back from the API calls we were making, I wanted to focus on the aesthetic rather than the nitty gritty details. At this point we hadn't come up with a name for our project and were calling it Blank & Chill</p>
+          <img src="img/streamsearch-mockup.png" alt="Stream search initial mockup">
+          <small>Initial site mockup created using Photoshop. At this point we were hoping that we would be able to show streaming data on the initial search query.</small><br><br>
 
-          <h3 id="stage2">Stage 2</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h3 id="stage2">Stage 2 - Muddling through the APIs</h3>
+          <p>Our first step was setting up the initial project structure with Angular and seeing what we could get from our APIs. Two of us had used the TMDB API on an earlier project and had a fairly good idea of what information it would return. It was chalk full of awesome posters and info about the movies, but it didn't include any streaming details.</p>
+          <p>This is where the GuidBox API came in to return streaming data the TMDB API didn't include. However, while the GuideBox API returned streaming data for specific queries, it didn't include this data on a broader search. For example, want to search all movies with "mission" in the title? No streaming data on that query. Want to query specifically "Mission Impossible: Ghost Protocol" - streaming data given. Ugh. We realized this would mean making potentially hundreds of API calls per search if we wanted to be able to display streaming data on an initial search.</p>
+          <p>As a result, we decided to start off by trying to hit our MVP goal of displaying streaming data only on the specific movie detail page. So while one pair worked toward setting up the initial search for movie functionality, the other pair worked on developing a home page interface that would allow you to initially see popular movies from the TMDB API.</p>
+          <img src="img/streamsearch-popular-movies.png" alt="Stream search popular movies example">
+          <small>Example of the popular movies we were able to return from the TMDB movie database. We eventually added functionality so that each of these movies could be clicked on to take you to their movie detail page.</small><br><br>
 
-          <h3 id="stage3">Stage 3</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-          <img src="img/" alt="">
-          <small></small><br><br>
-          <h3 id="stage4">Stage 4</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h3 id="stage3">Stage 3 - Showing the Details</h3>
+          <p>Now that you were able to search for a movie based on a word in its title we set up an separate API call to allow users to click on a specific movie and view the movie details through GuideBox. Again, we used GuideBox for this rather than TMDB simply so we could show where it was streaming.</p>
+          <img src="img/streamsearch-movie-detail.png" alt="Movie detail page example">
+          <small>Example of movie detail page with streaming information - Netfix for this example. Cheapest purchase price was something we found our API returned and added on later, as well as click functionality for writers and directors.</small><br><br>
+          <p>Soon after getting the movie detail pages working we realized we had a problem. We wanted to be able to show photos of the top actors and actresses for each movie, but the GuideBox API didn't return photos only a list of names and the characters they played. So we brought the TMDB API back in to fetch the list of the first five actors returned from the GuideBox list. This wasn't the way we would have preferred to do this, but it was an effective work around.</p>
+          <img src="img/streamsearch-movie-detail2.png" alt="Movie detail page example">
+          <small>Actor details for each movie with pictures of top actors and links to the rest of the cast. Each actor can then be searched independently from the movie detail page.</small><br><br>
+          <h3 id="stage4">Stage 4 - TV Shows and People</h3>
+          <p>The next major step was being able to query for People and TV shows. One major hurdle in this step was realizing that often times actors have been writers, producers, and directors and vise versa. To handle this, we created a way to search each person by name and then display their movies/shows based on their role as actor, director, writer, or producer. By defualt the search displays all of their work unsorted.</p>
+          <img src="img/streamsearch-person-detail.png" alt="Person detail page example">
+          <small>Example of the person detail page for Barbra Streisand. You can see that she has been and actor, director, writer, and producer. Clicking on any of those options will display her work in that role.</small><br><br>
+          <p>Searching for TV shows was very similar to setting up the search and detail display for movies. Except for one crucial piece - GuideBox didn't return streaming data for TV shows. Instead it showed what network the show was aired on. This was probably one of the most frustrating aspects of the project since 1) we fully expected GuideBox to be able to do this, and 2) it was the reason we had chosen their API in the first place.</p>
+          <p>With limited time left to complete the project we substituted network info for streaming details and kept the layout very similar to the layout on the movie details pages.</p>
+          <img src="img/streamsearch-tv-search.png" alt="TV search results example">
+          <img src="img/streamsearch-tv-detail.png" alt="TV detail page example">
+          <small><strong>Top:</strong> Example results of a tv show search for the word "breaking". <strong>Bottom:</strong> Example of a movie detail page. You can see that the network is substituted for the streaming info.</small><br><br>
 
-          <h3 id="stage5">Stage 5</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h3 id="stage5">Stage 5 - User Login</h3>
+          <p>User login was a major element that we wanted to be functional by presentation day. We had just found out we were going to have one less day to work on this project - thanks snow - and so it was time to get the user login underway. Lucky for us Firebase has Google User Authentication built in and it was just a matter of getting it set up. The hardest part of this step was testing to verify that it was actually working and then setting up Firebase storage tied to each user.</p>
+          <img src="img/streamsearch-login.png" alt="login from stream search site">
+          <img src="img/streamsearch-favorite.png" alt="login from stream search site">
+          <img src="img/streamsearch-favorite-movies.png" alt="login from stream search site">
+          <small><strong>Top:</strong> Stream Search login with Google Account. Once you are logged in you are able to see a list of your favorite movies and favorite tv shows from the movie detail page. <strong>Middle:</strong> Example of favoriting from movie detail page. Once favorite is button is clicked the button switches to a red removie from favorites button. <strong>Bottom:</strong> view from User Account page with users favorited movies and tv shows. Users can also remove from favorites on this page and see where the movie is streaming. Clicking on the streaming link will take you directly to that movie on your account.</small><br><br>
 
-          <h3 id="stage6">Stage 6</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <h3 id="stage6">Stage 6 - Breaking everything</h3>
+          <p>As mentioned earlier we weren't able to show where each movie was streaming on the initial search due to limits on our GuideBox API so we though an awesome solution would be to to allow you to search for movies only streaming on Netflix, Hulu, etc. since that WAS something GuideBox could do. Great solution right?</p>
+          <p>After a day of working on this feature it was up and running, however, it ended up still needing to make a bunch of API calls to work correctly. That in combination with all the testing we had been doing was getting us dangerously close to our API call limit with GuideBox for the month - except at the time we had no idea. On Wednesday afternoon we noticed that we were starting to throw multiple errors on searches - GuideBox had started blocking our API calls.</p>
+          <p>Show day was the following afternoon so we backed off testing our search functionality and worked more on the UI. We took the current API keys out of the project and threw some fresh ones in for the demo. It didn't solve all the issues we were having, but it gave us a showable final product.</p>
           <h3 id="stage7">Final Thoughts</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+          <p>Using an API can be incredibly challenging. We especially ran into issues with the GuideBox API documentation promising to do things it couldn't. It was a great learning experience and a huge project to undertake. Considering this project took three and a half days I know there are many pieces to look back over, fix, and refactor. Bottom line, I'm glad I was able to work with such an awesome team on this project. You can find the GitHub profiles for the rest of the team here:</p>
+          <ul>
+            <li><a href="https://github.com/lukeephilips">Luke</a></li>
+            <li><a href="https://github.com/JonathanWThom">Jonathan</a></li>
+            <li><a href="https://github.com/levibibo">Levi</a></li>
+          </ul>
 
           <h3>Check it out!</h3>
-          <p></p>
+          <p>The site is being hosted through Firebase under its old name of <strong><a href="https://blank-and-chill.firebaseapp.com/">blank-and-chill.firebaseapp.com</a></strong></p>
           <br>
           <div class="border-left-pop">
             <h2 class="text-pop">View Erica's other projects</h2>
