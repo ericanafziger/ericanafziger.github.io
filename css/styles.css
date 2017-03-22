@@ -86,7 +86,8 @@ ul, ol {
   margin-left: 15px;
   margin-bottom: 10px; }
   ul li, ol li {
-    padding-bottom: 10px; }
+    padding-bottom: 10px;
+    line-height: 1.2em; }
 
 .dropcap {
   color: #DEDEDE;
