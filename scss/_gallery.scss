@@ -1,6 +1,7 @@
 #bio {
-  @media screen and #{$mobile}{
-    min-height: 800px;
+  max-height: 500px;
+  @media screen and #{$tablet}{
+    max-height: 700px;
     text-align: justify;
   }
 }

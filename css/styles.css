@@ -90,7 +90,7 @@ ul, ol {
     line-height: 1.2em; }
 
 .dropcap {
-  color: #DEDEDE;
+  color: #181818;
   float: left;
   font-size: 75px;
   line-height: 60px;
@@ -1054,10 +1054,12 @@ footer {
   opacity: 0;
   margin-top: -20px; }
 
-@media screen and (max-width: 500px) {
-  #bio {
-    min-height: 800px;
-    text-align: justify; } }
+#bio {
+  max-height: 500px; }
+  @media screen and (max-width: 760px) {
+    #bio {
+      max-height: 700px;
+      text-align: justify; } }
 
 #work {
   min-height: 800px; }
