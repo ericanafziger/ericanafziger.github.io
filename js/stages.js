@@ -12,7 +12,6 @@ $(document).ready(function() {
 
     /* Check the current top of the window */
     var windowTop = $(window).scrollTop() + 250;
-    console.log(windowTop, stage1Top, stage2Top, stage3Top);
 
     if (windowTop >= stage1Top && windowTop < stage2Top) {
       $('[id^=stage]').removeClass('active-stage');

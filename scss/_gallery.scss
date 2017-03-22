@@ -1,16 +1,29 @@
+#bio {
+  @media screen and #{$mobile}{
+    min-height: 800px;
+    text-align: justify;
+  }
+}
+
 #work {
   min-height: 800px;
   @media screen and #{$tablet} {
     min-height: 900px;
   }
   @media screen and #{$mobile} {
-    min-height: 1500px;
+    min-height: 1650px;
   }
 }
 .gallery {
   [class*="col-"] {
     height: 280px;
     position: relative;
+    @media screen and #{$tablet} {
+      margin-bottom: 80px;
+    }
+    @media screen and #{$mobile} {
+      margin-bottom: 60px;
+    }
     .overlay {
       position: absolute;
       top: 50%;
@@ -22,6 +35,12 @@
       padding: 20px;
       opacity: 0;
       transition: all ease-in-out 200ms;
+      @media screen and #{$tablet} {
+        height: 80px;
+        top: 107%;
+        bottom: 0;
+        opacity: 1;
+      }
     }
     img {
       max-width: 100%;
@@ -36,6 +55,8 @@
     }
     @media screen and #{$tablet} {
       margin-top: 20px;
+      padding: 0 10px;
+      border: none;
     }
   }
 }
@@ -54,6 +75,12 @@
   min-height: 800px;
   img {
     min-height: 800px;
+    @media screen and #{$mobile} {
+      min-height: 850px;
+    }
+  }
+  @media screen and #{$mobile} {
+    min-height: 850px;
   }
 }
 //Stages Styling
