@@ -1060,6 +1060,10 @@ footer {
     #bio {
       max-height: 700px;
       text-align: justify; } }
+  @media screen and (max-width: 500px) {
+    #bio {
+      min-height: 800px;
+      text-align: justify; } }
 
 #work {
   min-height: 800px; }

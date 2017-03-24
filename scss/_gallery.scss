@@ -4,6 +4,10 @@
     max-height: 700px;
     text-align: justify;
   }
+  @media screen and #{$mobile}{
+    min-height: 800px;
+    text-align: justify;
+  }
 }
 
 #work {

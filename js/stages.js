@@ -1,6 +1,6 @@
+
 $(document).ready(function() {
 
-  /* Check the location of each stage */
   var stage1Top = $('#stage1').offset().top;
   var stage2Top = $('#stage2').offset().top;
   var stage3Top = $('#stage3').offset().top;
@@ -8,6 +8,7 @@ $(document).ready(function() {
   var stage5Top = $('#stage5').offset().top;
   var stage6Top = $('#stage6').offset().top;
   var stage7Top = $('#stage7').offset().top;
+
   $(window).scroll( function(){  /* Every time the window is scrolled ... */
 
     /* Check the current top of the window */
@@ -40,9 +41,8 @@ $(document).ready(function() {
 
   //smooth scrolls to different stages on page
 
-  $("[id$=-nav]").click(function() { /* class or id of button/link that will be clicked */
+  $('[id$="-nav"]').click(function() { /* class or id of button/link that will be clicked */
     var number = this.id.replace(/\D+/g, '');
-    console.log(number);
       $('html, body').animate({
           scrollTop: $("#stage" + number).offset().top - 50, /* class or id of div that will be scrolled to */
           behavior: 'smooth',
