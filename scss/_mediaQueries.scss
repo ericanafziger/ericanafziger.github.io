@@ -2,4 +2,4 @@
 $mobile: '(max-width: 500px)';
 $mobile-landscape: '(max-width: 760px) and (orientation: landscape)';
 $tablet: '(max-width: 760px)';
-$landscape: '(orientation: landscape)';
+$landscape: '(min-device-width : 768px) and (max-device-width : 1024px) and (orientation : landscape)';
