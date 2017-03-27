@@ -69,8 +69,8 @@
   opacity: 1;
   cursor: pointer;
 }
-.overlay:hover > img,
-.col-6:hover > img {
+.overlay:hover a img,
+.col-6:hover a img {
   background: $dark;
   opacity: 0.1;
   cursor: pointer;
