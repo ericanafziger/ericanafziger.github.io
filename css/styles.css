@@ -1064,6 +1064,9 @@ footer {
     #bio {
       min-height: 800px;
       text-align: justify; } }
+  @media screen and (orientation: landscape) {
+    #bio {
+      min-height: 800px; } }
 
 #work {
   min-height: 800px; }

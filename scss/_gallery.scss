@@ -8,6 +8,9 @@
     min-height: 800px;
     text-align: justify;
   }
+  @media screen and #{$landscape}{
+    min-height: 800px;
+  }
 }
 
 #work {
